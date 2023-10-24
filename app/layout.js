@@ -1,4 +1,5 @@
 import Nav from './(layout)/nav/Nav'
+import { DataGet } from './context/DataContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -13,8 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <DataGet>
         <Nav />
         {children}
+        </DataGet>
         </body>
     </html>
   )

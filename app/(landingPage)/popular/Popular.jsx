@@ -2,7 +2,7 @@ import {arr} from'@/app/(data)/Data'
 import Product from "@/app/(shared)/product/Product"
 
 const Popular=()=>{
-    // i need to map through just the first four elemennts of arr
+    // i need to loop through just the first four elemennts of arr
     const newArr=[]
     arr.forEach(elem=>{
         if(elem.id<5){
@@ -10,7 +10,8 @@ const Popular=()=>{
         }
     })
 
-    const mapped =newArr.map(elem=>( <Product key={elem.source} source={elem.source} productName={elem.productName} />
+    console.log(newArr)
+    const mapped =newArr.map(elem=>( <Product key={elem.source} id={elem.id} source={elem.source} productName={elem.productName} />
     ))
 
     return (

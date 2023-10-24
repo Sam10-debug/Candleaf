@@ -14,7 +14,8 @@ module.exports = {
       },
       colors:{
         buttonColor:'#56B280',
-        blackTexts:'#1D252C'
+        blackTexts:'#1D252C',
+        imgBg:'#F7F8FA',
       },
     },
   },

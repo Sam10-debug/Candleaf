@@ -4,6 +4,7 @@ import Product from '../product/Products'
 import Clean from '../clean/Clean'
 import Testimonials from '../testimonials/Testimonials'
 import Popular from '../popular/Popular'
+import Cart from '@/app/cart/[id]/page'
 
 const Conatiner = () => {
   return (
@@ -13,6 +14,7 @@ const Conatiner = () => {
     <Clean />
     <Testimonials />
     <Popular />
+    {/* <Cart /> */}
     </>
   )
 }

@@ -1,10 +1,12 @@
+import Link from "next/link"
 
-
-const Button = ({title,styling}) => {
+const Button = ({title,styling,link,handleClick}) => {
   return (
-    <button className={styling}>
+    <Link href={`${link}`}>
+    <button onClick={handleClick} className={styling}>
         {title}
     </button>
+    </Link>
   )
 }
 

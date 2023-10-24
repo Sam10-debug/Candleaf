@@ -1,5 +1,10 @@
 //NOTE THAT THE AUTH PAGE ON THE DESIGN DOESNT HAVE THE FOOTER AND NAV, THAT MEANS IT ISNT CONSISTENT ACROSS AL PAGES, FIX THAT SUBSEQUENTLY
 //THINK YOU HAVE TO MOVE IT TO A SEPERATE DIRECTROY AND ITLL HAVE ITS OWN UNIQUE LAYOUT BUT FIGURE IT OUT LATER 
+//WORK ON THE SWITCH
+//WORK ON THE NAV ROUTING TO PLACES, DONT MAKE THEM DORMANT
+//WORK ON THE CHECK OOUT BUTTON
+//WORK ON THE PRPOFILE BUTTON
+//THERE IS A PROBLEM WITH DELETING THE CART ITEMS, CHECK WELL WHEN TESTING IT
 
 import Conatiner from "./(landingPage)/container/Conatiner";
 
@@ -7,8 +12,8 @@ import Conatiner from "./(landingPage)/container/Conatiner";
 
 export default function Home() {
   return (
-    <main className="">
+    <div className="">
       <Conatiner />
-    </main>
+    </div>
   )
 }

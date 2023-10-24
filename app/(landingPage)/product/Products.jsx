@@ -2,7 +2,7 @@ import Product from "@/app/(shared)/product/Product"
 import {arr} from'@/app/(data)/Data'
 
 const Products = () => {
-  const mapped =arr.map(elem=>( <Product key={elem.source} source={elem.source} productName={elem.productName} />
+  const mapped =arr.map(elem=>( <Product key={elem.source} id={elem.id} source={elem.source} productName={elem.productName} />
   ))
   return (
     <section className=" py-8">
