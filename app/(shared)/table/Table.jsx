@@ -12,10 +12,13 @@ const Table = ({paramId,elem}) => {
 
     function removeCartItem(){
         //get the index of the element
-        const i= mockArr.indexOf(elem)-1
+        const i= mockArr.indexOf(elem) // i dont think this is necessary
         const updatedArray = [...mockArr];
         updatedArray.splice(i, 1);
         setMockArr(updatedArray)
+
+           //it keeps getting the index of the one added last
+        // i need the index of the one clicked
     }
 
   return (

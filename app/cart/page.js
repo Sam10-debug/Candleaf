@@ -1,16 +1,11 @@
 'use client'
-import Image from "next/image"
-import Switch from "@/app/(shared)/switch/Switch"
 import Button from "@/app/(shared)/button/Button"
-import { arr } from "@/app/(data)/Data"
 import { useData } from "@/app/context/DataContext"
 import Table from "@/app/(shared)/table/Table"
 
 
 const Cart = ({params}) => {
     const paramId= Number(params.id)-1
-    const source=arr[paramId].source
-    const productName=arr[paramId].productName
     const {mockArr} = useData()
 
     //map through mock array to return each Table
@@ -42,7 +37,7 @@ const Cart = ({params}) => {
           <td></td>
           <td className=" lg:text-[20px] font-bold leading-[25.6px]">Subtotal</td>
           <td className=" lg:text-[20px] font-bold leading-[25.6px]">$9.99</td>
-          <td><Button title='Check Out' styling=' rounded-[4px] w-[183px] h-[40px] text-white font-medium bg-buttonColor' /></td>
+          <td><Button title='Check Out' link={`/cart`} styling=' rounded-[4px] w-[183px] h-[40px] text-white font-medium bg-buttonColor' /></td>
         </tr>
       </tbody>
     </table>

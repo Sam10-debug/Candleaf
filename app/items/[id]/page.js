@@ -28,7 +28,6 @@ const Item = ({ params, searchParams }) => {
           }
           //then push
         }
-        console.log(mockArr)
 
 
   return (
@@ -51,7 +50,7 @@ const Item = ({ params, searchParams }) => {
             <Switch />
         </div>
         <div className=' flex justify-center py-8'>
-        <Button handleClick={addToCart} link={`/cart/${paramsId}`}  title='+ Add to cart' styling='text-[20px] rounded-[4px] w-[350px] h-[42px] text-white font-regular bg-buttonColor' />
+        <Button handleClick={addToCart} link={`/cart`}  title='+ Add to cart' styling='text-[20px] rounded-[4px] w-[350px] h-[42px] text-white font-regular bg-buttonColor' />
         </div>
         <div className='mt-4 rounded-[7px] space-y-4 border-[#E6E6E6] border-[1px] w-fit p-4'>
             <p><span className=' font-semibold'>Wax:</span> Top grade Soy wax that delivers a smoke less, consistent burn</p>
