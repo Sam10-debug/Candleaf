@@ -7,7 +7,6 @@
   background-image: url('/images/bg-image.png');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 header{
@@ -15,4 +14,8 @@ header{
   top:0;
   left:0;
   right:0;
+}
+
+footer>ul>li:hover{
+  cursor: pointer;
 }
