@@ -4,7 +4,7 @@ import Switch from "../switch/Switch"
 import { arr } from "@/app/(data)/Data"
 import { useData } from "@/app/context/DataContext"
 
-const Table = ({paramId,elem}) => {
+const Table = ({elem}) => {
 
     const source=arr[elem].source
     const productName=arr[elem].productName

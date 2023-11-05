@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../hero/Hero'
 import Product from '../product/Products'
 import Clean from '../clean/Clean'

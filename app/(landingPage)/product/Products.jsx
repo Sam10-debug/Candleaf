@@ -5,7 +5,7 @@ const Products = () => {
   const mapped =arr.map(elem=>( <Product key={elem.source} id={elem.id} source={elem.source} productName={elem.productName} />
   ))
   return (
-    <section className=" py-8">
+    <section className=" py-8" id="products">
         <div className=" text-center">
         <h2 className="text-[24px] lg:text-[40px] font-medium leading-[57.6px] text-[#0B254B]">Products</h2>
         <p className=" text-[14px] leading-[27.6px] text-[#5E6E89] 5E6E89 lg:text-[18px]">Order it for you or for your beloved ones </p>

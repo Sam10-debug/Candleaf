@@ -1,8 +1,8 @@
 
 const Footer=()=>{
     return (
-        <footer className=" bg-black flex p-12 mt-12">
-            <div className="w-1/2">
+        <footer className=" bg-black flex flex-col md:flex-row p-12 mt-12 ">
+            <div className="md:w-1/2">
                 <div className="">
                 <svg width="250" height="100" viewBox="0 0 250 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M75.3 46.1207C75.3 43.7145 75.8305 41.5653 76.8913 39.6731C77.9753 37.7575 79.4397 36.2741 81.2847 35.2228C83.1527 34.1482 85.2399 33.6109 87.5461 33.6109C90.2444 33.6109 92.6083 34.3118 94.6377 35.7134C96.6672 37.1151 98.0855 39.054 98.8927 41.5303H93.3232C92.7697 40.3622 91.9856 39.4862 90.9708 38.9022C89.9792 38.3182 88.8261 38.0261 87.5115 38.0261C86.1047 38.0261 84.8478 38.3649 83.7408 39.0423C82.6569 39.6964 81.8036 40.6309 81.1809 41.8457C80.5813 43.0604 80.2815 44.4854 80.2815 46.1207C80.2815 47.7326 80.5813 49.1576 81.1809 50.3957C81.8036 51.6105 82.6569 52.5566 83.7408 53.2341C84.8478 53.8882 86.1047 54.2153 87.5115 54.2153C88.8261 54.2153 89.9792 53.9232 90.9708 53.3392C91.9856 52.7318 92.7697 51.8441 93.3232 50.6761H98.8927C98.0855 53.1757 96.6672 55.1263 94.6377 56.528C92.6313 57.9063 90.2674 58.5954 87.5461 58.5954C85.2399 58.5954 83.1527 58.0698 81.2847 57.0186C79.4397 55.944 77.9753 54.4605 76.8913 52.5683C75.8305 50.6761 75.3 48.5269 75.3 46.1207Z" fill="white"/>
@@ -34,19 +34,19 @@ const Footer=()=>{
                 </div>
                 <p className=" leading-[22.8px] text-white">Your natural candle made for your home and for your wellness.</p>
             </div>
-            <ul className="w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
+            <ul className="md:w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
                 <li className=" text-buttonColor">Discovery</li>
                 <li className="">New season</li>
                 <li className="">Most searched</li>
                 <li className="">Most selled</li>
             </ul>
-            <ul className="w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
+            <ul className="md:w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
                 <li className=" text-buttonColor">About</li>
                 <li className="">Help</li>
                 <li className="">Shipping</li>
                 <li className="">Affiliate</li>
             </ul>
-            <ul className="w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
+            <ul className="md:w-1/6 space-y-4 leading-[28.8px] font-medium text-white">
                 <li className=" text-buttonColor">Info</li>
                 <li className="">Contact us</li>
                 <li className="">Privacy Policies</li>

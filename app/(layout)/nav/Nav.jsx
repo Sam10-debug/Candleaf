@@ -1,9 +1,16 @@
 'use client'
+import {useRef} from 'react'
 import Link from "next/link"
 import { useData } from "@/app/context/DataContext"
 
 const Nav = () => {
+    const navRef= useRef()
     const {mockArr}= useData()
+
+    function showNav(){
+        navRef.current.classList.toggle('show-nav')
+    }
+    
   return (
    <header className=' md:h-[75px] flex bg-white md:px-32 md:space-x-48 shadow-md'>
         <div className=' flex items-center md:flex-0'>
@@ -41,13 +48,14 @@ const Nav = () => {
             <path d="M85.6841 6.4945H83.9039V14.6552H81.298V6.4945H80.1418V4.35672H81.298V3.83622C81.298 2.57214 81.6528 1.64267 82.3624 1.04781C83.072 0.45295 84.1425 0.174109 85.574 0.211288V2.40483C84.95 2.39244 84.5157 2.49778 84.271 2.72085C84.0263 2.94393 83.9039 3.3467 83.9039 3.92916V4.35672H85.6841V6.4945Z" fill="#56B280"/>
             </svg>
         </div>
-        <nav className=" flex items-center md:flex-1">
-            <ul className=" flex flex-col md:flex-row md:space-x-10 md:ml-[25%]">
-                <li className=""><Link href=''>Discovery</Link></li>
-                <li className=""><Link href=''>About</Link></li>
-                <li className=""><Link href=''>Contact us</Link></li>
+        <nav ref={navRef} className=" flex items-center md:flex-1">
+            <ul className=" flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 md:ml-[25%]">
+                <li className=""><Link href='/'>Home</Link></li>
+                <li className=""><Link href='#products'>Discovery</Link></li>
+                <li className=""><Link href='#testimonials'>Testimonials</Link></li>
+       
             </ul>
-            <div className=" flex items-center ml-auto space-x-2">
+            <div className=" flex items-center md:ml-auto mt-auto md:mt-0 p-2 md:p-0 space-x-2">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.625 29.75C27.625 29.75 29.75 29.75 29.75 27.625C29.75 25.5 27.625 19.125 17 19.125C6.375 19.125 4.25 25.5 4.25 27.625C4.25 29.75 6.375 29.75 6.375 29.75H27.625ZM6.38563 27.744V27.7397V27.744ZM6.42175 27.625H27.5782C27.5882 27.6238 27.5981 27.6224 27.608 27.6208L27.625 27.6165C27.6229 27.0938 27.2978 25.5212 25.857 24.0805C24.4715 22.695 21.8641 21.25 17 21.25C12.1337 21.25 9.5285 22.695 8.143 24.0805C6.70225 25.5212 6.37925 27.0938 6.375 27.6165C6.39055 27.6195 6.40614 27.6223 6.42175 27.625ZM27.6165 27.744V27.7397V27.744ZM17 14.875C18.1272 14.875 19.2082 14.4272 20.0052 13.6302C20.8022 12.8332 21.25 11.7522 21.25 10.625C21.25 9.49783 20.8022 8.41683 20.0052 7.6198C19.2082 6.82277 18.1272 6.375 17 6.375C15.8728 6.375 14.7918 6.82277 13.9948 7.6198C13.1978 8.41683 12.75 9.49783 12.75 10.625C12.75 11.7522 13.1978 12.8332 13.9948 13.6302C14.7918 14.4272 15.8728 14.875 17 14.875ZM23.375 10.625C23.375 12.3158 22.7034 13.9373 21.5078 15.1328C20.3123 16.3284 18.6908 17 17 17C15.3092 17 13.6877 16.3284 12.4922 15.1328C11.2966 13.9373 10.625 12.3158 10.625 10.625C10.625 8.93425 11.2966 7.31274 12.4922 6.11719C13.6877 4.92165 15.3092 4.25 17 4.25C18.6908 4.25 20.3123 4.92165 21.5078 6.11719C22.7034 7.31274 23.375 8.93425 23.375 10.625Z" fill="#272727"/>
                 </svg>
@@ -59,6 +67,7 @@ const Nav = () => {
                 </div>
                 </div>
         </nav>
+        <div onClick={showNav} className=' ml-auto flex md:hidden'>HAMBURGER</div>
    </header>
   )
 }

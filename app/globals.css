@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 .hero{
   background-image: url('/images/bg-image.png');
   background-repeat: no-repeat;
@@ -18,4 +23,22 @@ header{
 
 footer>ul>li:hover{
   cursor: pointer;
+}
+.show-nav{
+  transform:translateX(100%);
+  transition: all ease-in-out 2s;
+}
+
+@media screen and (max-width:768px){
+  nav{
+    position:fixed;
+    background-color:whitesmoke;
+    top:34px;
+    right:0;
+    left:0;
+    height:200px;
+    transform:translateX(0%);
+    transition:all ease-in-out 2s;
+    flex-direction:column;
+  }
 }

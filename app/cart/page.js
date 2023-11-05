@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link"
 import Button from "@/app/(shared)/button/Button"
 import { useData } from "@/app/context/DataContext"
 import Table from "@/app/(shared)/table/Table"
@@ -21,7 +22,7 @@ const Cart = ({params}) => {
   return (
     <section className="mt-24">
         <h2 className=' font-medium text-[22px] lg:text-[26px] leading-[57.6px] text-black text-center'>Your Cart Items</h2>
-        <p className=' lg:text-[18px] text-buttonColor leading-[25.6px] underline text-center'>Back to shopping</p>
+        <Link href='/#products'><p className=' lg:text-[18px] text-buttonColor leading-[25.6px] underline text-center'>Back to shopping</p></Link>
         <table className=" lg:w-[90%] mx-auto mt-8 table-auto w-full">
       <thead>
         <tr className="w-full">

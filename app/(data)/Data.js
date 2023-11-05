@@ -1,3 +1,5 @@
+//hardcoded data
+
 const arr= [
     {source:'/images/image 1.png',productName:'Spiced Mint',id:1},
     {source:'/images/image 2.png',productName:'Summer Cherries',id:2},
@@ -8,12 +10,14 @@ const arr= [
     {source:'/images/image 7.png',productName:'Sweet StrawBerry',id:7},
     {source:'/images/image 8.png',productName:'Spiced Mint',id:8},
 ]
+
 const textArr=[
     'Eco-sustainable:All recyclable materials, 0% CO2 emissions',
     'Hyphoallergenic: 100% natural, human friendly ingredients ',
     'Handmade: All candles are craftly made with love.',
     'Long burning: No more waste. Created for last long.'
 ]
+
 const testimonialArray=[
     {
         source:'/images/bg.png',

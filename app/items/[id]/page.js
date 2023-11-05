@@ -5,7 +5,7 @@ import Button from '@/app/(shared)/button/Button'
 import Switch from '@/app/(shared)/switch/Switch'
 import { useData } from '@/app/context/DataContext'
 
-const Item = ({ params, searchParams }) => {
+const Item = ({ params}) => {
     let obj={}
     const paramsId=Number(params.id)
     const {mockArr,setMockArr}=useData()
@@ -31,12 +31,11 @@ const Item = ({ params, searchParams }) => {
 
 
   return (
-    <section className=' h-screen flex justify-center items-center gap-12 px-8'>
+    <section className=' h-screen flex flex-col md:flex-row mt-20 md:mt-0 justify-center items-center gap-12 px-8'>
       <div className=' flex-1 space-y-4'>
         <div className=' bg-[#F7F8FA] flex justify-center'><Image src={obj.source} width={400} height={400} alt='product image' /></div>
         <div className='space-y-4 text-center'>
             <p className='text-[20px] lg:text-[22px] leading-[25.6px] text-black font-medium'>All hand-made with natural soy wax, Candleaf is made for your pleasure moments. </p>
-            <p className='text-[20px]  leading-[25.6px] text-buttonColor font-bold'>🚚 FREE SHIPPING</p>
         </div>
       </div>
       <div className=' flex-1'>

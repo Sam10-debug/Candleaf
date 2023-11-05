@@ -10,7 +10,6 @@ const Popular=()=>{
         }
     })
 
-    console.log(newArr)
     const mapped =newArr.map(elem=>( <Product key={elem.source} id={elem.id} source={elem.source} productName={elem.productName} />
     ))
 
