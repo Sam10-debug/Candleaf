@@ -25,11 +25,34 @@ footer>ul>li:hover{
   cursor: pointer;
 }
 .show-nav{
-  transform:translateX(100%);
+  transform:translateX(0%);
   transition: all ease-in-out 2s;
 }
+.show{
+	transform: rotate(45deg);
+	position: relative;
+	top: 6px;
+	left: 1px;
+}
+.showw{
+	transform: rotate(-45deg);
+	position: relative;
+	bottom: 6px;
+}
+.remove{
+	display: none;
+}
 
-@media screen and (max-width:768px){
+.hamburger{
+  display:none
+}
+
+nav>ul{
+  display:flex;
+  flex-direction:row;
+}
+
+@media screen and (max-width:650px){
   nav{
     position:fixed;
     background-color:whitesmoke;
@@ -37,8 +60,22 @@ footer>ul>li:hover{
     right:0;
     left:0;
     height:200px;
-    transform:translateX(0%);
+    transform:translateX(-100%);
     transition:all ease-in-out 2s;
     flex-direction:column;
+  }
+  nav>ul{
+    flex-direction:column;
+    gap:4px;
+  }
+  .hamburger{
+    display: flex;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+  /* left: 0; */
+  /* top: 2px; */
+  /* position: fixed; */
+  z-index: 999;
   }
 }
