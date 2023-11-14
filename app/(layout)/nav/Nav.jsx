@@ -18,7 +18,7 @@ const Nav = () => {
     }
     
   return (
-   <header className=' sm:h-[75px] flex bg-white sm:px-12 sm:space-x-24 md:px-32 md:space-x-48 shadow-md'>
+   <header className=' h-[75px] flex bg-white px-12 sm:space-x-24 md:px-32 md:space-x-48 shadow-md'>
         <div className=' flex items-center md:flex-0'>
             <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_903_78)">
@@ -73,7 +73,7 @@ const Nav = () => {
                 </div>
                 </div>
         </nav>
-        <div onClick={showNav}  className='hamburger ml-auto'>
+        <div onClick={showNav}  className=' hamburger ml-auto'>
 			<svg ref={first} width="21" className=" " height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M1.38647 1H19.3865" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 			</svg>

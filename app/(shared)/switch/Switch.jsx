@@ -21,9 +21,9 @@ const Switch = () => {
 
   return (
     <div className=' flex justify-center gap-2 text-[18px] hover:cursor-pointer text-black w-[75px] h-[30px] border-buttonColor border-[1px]'>
-                <span onClick={Increment} className='text-buttonColor'>+</span>
-                <span >{cartNumber}</span>
                 <span onClick={Decrement} className='text-buttonColor'>-</span>
+                <span >{cartNumber}</span>
+                <span onClick={Increment} className='text-buttonColor'>+</span>
     </div>
   )
 }

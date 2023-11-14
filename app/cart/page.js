@@ -23,7 +23,7 @@ const Cart = ({params}) => {
     <section className="mt-24">
         <h2 className=' font-medium text-[22px] lg:text-[26px] leading-[57.6px] text-black text-center'>Your Cart Items</h2>
         <Link href='/#products'><p className=' lg:text-[18px] text-buttonColor leading-[25.6px] underline text-center'>Back to shopping</p></Link>
-        <table className=" lg:w-[90%] mx-auto mt-8 table-auto w-full">
+        <table className="w-[98%] lg:w-[90%] mx-auto mt-8 table-auto">
       <thead>
         <tr className="w-full">
           <th className='w-1/4  lg:w-1/2 text-left py-2'>Product</th>
@@ -38,7 +38,7 @@ const Cart = ({params}) => {
           <td></td>
           <td className=" lg:text-[20px] font-bold leading-[25.6px]">Subtotal</td>
           <td className=" lg:text-[20px] font-bold leading-[25.6px]">$9.99</td>
-          <td><Button title='Check Out' link={`/cart`} styling=' rounded-[4px] w-[183px] h-[40px] text-white font-medium bg-buttonColor' /></td>
+          <td><Button title='Check Out' link={`/cart`} styling=' rounded-[4px] w-[140px] md:w-[183px] h-[40px] text-white font-medium bg-buttonColor' /></td>
         </tr>
       </tbody>
     </table>
