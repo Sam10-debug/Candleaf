@@ -31,7 +31,7 @@ const Item = ({ params}) => {
 
 
   return (
-    <section className=' h-screen flex flex-col md:flex-row mt-20 md:mt-0 justify-center items-center gap-12 px-8'>
+    <section className=' h-screen flex flex-col md:flex-row mt-40 md:mt-0 justify-center items-center gap-12 px-8'>
       <div className=' flex-1 space-y-4'>
         <div className=' bg-[#F7F8FA] flex justify-center'><Image src={obj.source} width={400} height={400} alt='product image' /></div>
         <div className='space-y-4 text-center'>
